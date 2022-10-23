@@ -1,0 +1,96 @@
+/*mobile @media screen and (max-width:767px)*/
+/*GRILLA CURSOS*/
+
+.cursoUno {
+    height: 100%;
+    display: grid;
+    margin: 0.5em -1em -5em 0.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgcursoUno titulocursoUno"
+        "parrafocursoUno parrafocursoUno"
+        "linkCursod linkCursod";
+    grid-column-gap: 2em;
+    padding: 0;
+
+    .imgcursoUno {
+        grid-area: imgcursoUno;
+        margin-left: 5em;
+    }
+
+    .titulocursoUno {
+        grid-area: titulocursoUno;
+        
+    }
+
+    .parrafocursoUno {
+        grid-area: parrafocursoUno;
+        margin-top: -2em;
+    }
+
+    .linkCursod {
+        grid-area: linkCursod;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-bottom: 1em;
+        margin-right: 4em;
+        
+        a {
+            list-style-type: none;
+            color: black;
+            padding: 1em;
+        }
+    }
+}
+
+/*curso Izquierda*/
+.cursoDos {
+    height: 100%;
+    margin: -5em -1em -10em 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulocursoDos imgcursoDos"
+        "parrafocursoDos parrafocursoDos"
+        "linkCursoi linkCursoi";
+    grid-column-gap: 2em;
+    padding: 0;
+
+    .titulocursoDos {
+        grid-area: titulocursoDos;
+    }
+
+    .parrafocursoDos {
+        grid-area: parrafocursoDos;
+        margin-top: -3em;
+    }
+    
+    .linkCursoi {
+    grid-area: linkCursoi;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    text-decoration: none;
+        a {
+            list-style-type: none;
+            color: black;
+            padding: 1em;
+        }
+    }
+        
+    .imgcursoDos {
+        grid-area: imgcursoDos;
+    }
+
+}
+
+
+
+

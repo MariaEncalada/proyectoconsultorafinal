@@ -1,0 +1,230 @@
+@import "generales";
+@import "servicios";
+@import "cursos";
+@import "busquedas";
+@import "contacto";
+@import "media";
+
+
+/*mobile @media screen and (max-width:767px)*/
+/*mixins*/
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+@mixin flex-row-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/*nav*/
+
+
+/*header*/
+
+header {
+    background-color: rgb(96, 94, 94);
+    margin-top: 0em;
+    font-size: larger;
+    display: grid;
+    justify-content: space-between;
+    padding: 0em;
+
+    .btn-outline-success {
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+
+
+
+/*index*/
+
+.bannerInicio {
+    height: 16em;
+    width: 100%;
+    padding: 1;
+    margin: 0;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+}
+
+.fotoCentral {
+    margin: 1em 0.5em 0.5em 4em;
+    width: 80%;
+}
+
+/*servicio*/
+.bannerServicio {
+    background-image: url("../Imagenes/bannerservicios.jpg");
+    height: 25em;
+    width: 100%;
+    margin-top: 0em;
+    padding: 1em;
+}
+
+/*busquedas*/
+
+.masEmpleo{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2.5em 2em 0.5em 0.5em;
+    
+}
+
+
+/*cursos*/
+
+.bannerCurso {
+    width: 100%;
+    padding: 1;
+    margin: 0;
+    height: 14em;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+}
+
+.videoRh {
+    margin-left: 5em;
+    margin-bottom: 2em;
+    width: 25em;
+}
+
+/*Grilla cursos*/
+.imgcursoUno {
+    @include sizes(12em, 10em);
+    padding: 0;
+}
+
+.imgcursoDos {
+    @extend .imgcursoUno;
+    margin-right: 5em;
+}
+
+.linkCursod {
+    @include flex-row-flex-start;
+    list-style-type: none;
+    margin-bottom: 0em;
+    margin-left: 3em;
+}
+
+.linkCursoi {
+    @extend .linkCursod;
+}
+
+/*formulario*/ 
+
+.tituloFormulario {
+    margin: 0;
+    height: 14em;
+    width: 100%;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+    padding: 1;
+
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width:768px) {
+
+    /*fotter*/
+    .icon{
+        margin-left: 6em;
+        margin-top: 1em;
+    }
+    
+    /*index*/
+    .fotoCentral {
+        @include sizes(40em, 20em);
+        margin-left: 6em;
+    }
+
+    /*servicio*/
+
+    .bannerServicio {
+        background-image: url("../Imagenes/bannerservicios.jpg");
+        height: 19em;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /*busqueda*/
+    .bannerBusqueda {
+        height: 28em;
+    }
+
+    .busquedaiT {
+        height: 18em;
+    }
+
+    /*cursos*/
+    .videoRh {
+        margin-left: 7em;
+        width: 35em;
+    }
+    
+    /*formulario*/
+    .nombreC, .correoC, .contraC, .enviarC {
+        height: 90%;
+        width: 15em;
+    }
+}
+
+/*pc*/
+
+@media screen and (min-width:1024px) {
+    
+    /*index*/
+    .fotoCentral {
+        @include sizes(65em, 30em);
+        margin-left: 10em;
+    }
+
+    .bannerInicio {
+        height: 14em;
+    }
+
+    /*servicio*/
+
+    .bannerServicio {
+        background-image: url("../Imagenes/bannerservicios.jpg");
+        height: 16em;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .videoRh {
+        margin-left: 8em;
+        width: 35em;
+    }
+
+    /*busquedas*/
+
+    .busquedaiT {
+        height: 15em;
+    }
+
+    /*formulario*/
+
+    .mapa {
+        margin-left: 15em;
+        margin-bottom: 5em;
+        height: 25em;
+        width: 25em;
+    }
+    
+    .mapa:hover {
+        transform: rotate(360deg) scale(1.5);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    
+    .parrafoFuno {
+        margin-left: 3em;
+        padding: 1em;
+        width: 15em;
+        margin-top: -3em;
+    }
+}

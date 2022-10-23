@@ -1,0 +1,75 @@
+/*mobile @media screen and (max-width:767px)*/
+.busquedaiT {
+    background-color: rgb(242, 188, 138);
+    height: 22em;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 16px 24px 13px -9px rgb(104, 66, 13);
+
+    .linkBusqueda {
+        margin-right: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        list-style-type: none;
+
+        a {
+            color: black;
+            padding: 1em;
+        }
+    }
+}
+
+.bannerBusqueda {
+    background-image: url("../Imagenes/fondobusqueda.jpg");
+    height: 33em;
+    margin-top: 0em;
+    width: 100%;
+    padding: 1em;
+
+    p {
+        margin-left: 0em;
+    }
+
+    .linkCv {
+        margin: 0em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+
+        .cargarCv {
+            color: rgb(82, 38, 25);
+            font-weight: 700;
+            border: 1px solid rgb(82, 38, 25);
+            padding: 0.5em;
+            margin-right: 5em;
+        } 
+    }      
+
+    .buscadorT {
+        margin-top: 3em;
+        margin-left: 1em;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        font-weight: 600;
+        height: 2.5em;
+
+        .buscadorV {
+            width: 15em;
+            height: 2em;
+        }
+    }
+}
+
+.pagination{
+    a {
+        color: black;
+    }
+}
+
+
+
+

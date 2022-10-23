@@ -1,0 +1,23 @@
+/*mobile @media screen and (max-width:767px)*/
+
+.serviciosP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    .serviciosRh {
+        padding: 2;
+
+        img {
+            margin-top: 0.5em;
+            margin-left: 4em;
+            margin-bottom: 2em;
+            width: 15em;
+            height: 15em;
+        }
+    }
+}
+
+
+

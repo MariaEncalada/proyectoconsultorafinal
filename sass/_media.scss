@@ -1,0 +1,268 @@
+/*TABLET*/
+@media screen and (min-width:768px) {
+/*nav*/
+    .me-2 {
+    width: 20em;
+    margin-left: 3em;
+    }
+/*index*/
+
+    .fotoC .fotoCentral {
+    width: 80%;
+    }
+
+/*servicio*/
+
+    .serviciosP {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+
+        .serviciosRh {
+            padding: 0;
+
+            img {
+                margin-top: 0em;
+                margin-bottom: 3em;
+                margin-left: 5em;
+                width: 15em;
+                height: 10em;
+            }
+        }
+    }
+    /*cursos*/
+    .cursoUno {
+        margin: 1.5em 5em -10em 5em;
+        padding: 0em;
+
+        .imgcursoUno {
+            width: 16em;
+            height: 10em;
+            margin-top: 1em;
+        }
+
+        .parrafocursoUno {
+            grid-area: parrafocursoUno;
+            margin-top: -1em;
+        }
+    }
+    
+    .cursoDos {
+        margin: 1em 5em -10em 5em;
+        padding: 0;
+    
+        .parrafocursoDos {
+            grid-area: parrafocursoDos;
+            margin-top: 1em;
+        }
+
+        .imgcursoDos {
+            width: 16em;
+            height: 10em;
+            margin-top: 3em;
+        }
+    }
+    /*busquedas*/
+
+    .bannerBusqueda .buscadorT .buscadorV {
+            width: 25em;
+        }
+    
+    /*formulario*/
+
+    .grillaF {
+        .nombreC, .correoC, .contraC {
+            height: 90%
+        }
+        .enviarC {
+            height: 100%
+        }
+    }
+    
+    .grillaMapa {
+        margin-left: 5em;
+
+        .mapa {
+            height: 23em;
+            width: 23em;
+            margin-bottom: 5em;
+        }
+    }
+    /*footer*/
+    .redes {
+        .pieP {
+            address .icon {
+                margin-left: 8em;
+            } 
+            img .icon{
+                margin-left: 15em;
+            }
+        }
+    }
+}
+
+/*PC*/
+@media screen and (min-width:1024px) {
+    
+    /*nav*/
+    .me-2 {
+        width: 30em;
+        margin-left: 3em;
+    }
+
+    /*index*/
+    .fotoC .fotoCentral {
+        width: 72%;
+        margin-left: 4em;
+        margin-right: 0em;
+        }
+
+    /*servicio*/
+    .serviciosP {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1em;
+
+        .serviciosRh {
+            padding: 1em;
+
+            img {
+                margin-top: 0.5em;
+                margin-left: 4em;
+                height: 18em;
+                width: 18em;
+            }
+        }
+    }
+
+    /*cursos*/
+
+    .cursoUno {
+        height: 100%;
+        margin: 1em 1.5em 1em 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "imgcursoUno titulocursoUno titulocursoUno"
+            "imgcursoUno parrafocursoUno parrafocursoUno"
+            "imgcursoUno linkCursod linkCursod";
+
+        .imgcursoUno {
+            grid-area: imgcursoUno;
+            width: 20em;
+            height: 15em;
+            margin-top: 3em;
+        }
+            
+        .titulocursoUno {
+            grid-area: titulocursoUno;
+        }
+    
+        .parrafocursoUno {
+            grid-area: parrafocursoUno;
+            margin-top: -3em;
+        }
+        .linkCursod {
+            grid-area: linkCursod;
+        }
+    }
+
+    .cursoDos {
+        height: 100%;
+        margin: -3em 0.5em -4em 0.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "titulocursoDos titulocursoDos imgcursoDos"
+            "parrafocursoDos parrafocursoDos imgcursoDos "
+            "linkCursoi linkCursoi imgcursoDos ";
+        .imgcursoDos {
+            grid-area: imgcursoDos;
+            width: 20em;
+            height: 15em;
+            margin-top: 3em;
+        }
+        
+        .titulocursoDos {
+            grid-area: titulocursoDos;
+        }
+        
+        .parrafocursoDos {
+            grid-area: parrafocursoDos;
+            margin-top: -3em;
+        }
+        .linkCursoi {
+            grid-area: linkCursoi;
+        }
+    }
+
+    /*busquedas*/
+
+    main .bannerBusqueda {
+        height: 23em;
+
+        .linkCv {
+            margin-left: 2em;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .buscadorT {
+            margin-top: 3em;
+
+            .buscadorV {
+                width: 35em;
+            }
+        }    
+    }
+
+    /*contacto*/
+
+    .grillaF {
+        margin: 1% 32% 1% 32%;
+        grid-gap: 0.5em;
+        padding: 0;
+
+        .nombreC, .correoC, .contraC {
+            height: 70%
+        }
+
+        .enviarC {
+            height: 90%
+        }
+    }
+
+    /*footer*/
+
+    .redes {
+        margin: 0em 5em 0em 5em;
+        padding: 0em;
+
+        .pieP {
+            padding: 4em;
+            margin-left: 3em;
+            margin-right: 3em;
+
+            .icon {
+                width: 3em;
+                height: 3em;
+                margin-left: 7em;
+            }
+
+            address .icon {
+                margin-left: 8em;
+            } 
+
+            a {
+                padding: 5em;
+            }
+        }
+    }
+}
